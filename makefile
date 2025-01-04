@@ -7,3 +7,6 @@ build:
 	--build-arg UBUNTU_VERSION=$(UBUNTU_VERSION) \
 	--build-arg NODE_VERSION=$(NODE_VERSION) \
 	.
+
+push:
+	docker push ostai/ubuntu-node:$(UBUNTU_VERSION)-$(NODE_VERSION)
