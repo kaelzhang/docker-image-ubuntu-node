@@ -50,7 +50,7 @@ jobs:
           context: .
           push: true
           tags: ostai/ubuntu-node:16.04-16
-          platforms: linux/amd64,linux/arm64,windows/amd64
+          platforms: linux/amd64,linux/arm64
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
       # Step 7: Move cache for future builds
